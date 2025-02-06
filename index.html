@@ -11,15 +11,15 @@
   </head>
   <body>
     <header class="header">
-      <nav>
-        <ul class="navigation">
-          <li>главная</li>
-          <li>посмотреть лоты</li>
-          <li>об аукционе</li>
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-list-item header__menu-list-item-active"><a class="header__menu-link header__menu-link-active" href=>главная</a></li>
+          <li class="header__menu-list-item"><a class="header__menu-link" href=>посмотреть лоты</a></li>
+          <li class="header__menu-list-item"><a class="header__menu-link" href=>об аукционе</a></li>
         </ul>
       </nav>
       <a class="logo"><img src="./images/logo-black.svg" alt="Логотип черный"></a>
-      <address class="contacts header__address">
+      <address class="address header__address">
         <a href="tel:+999955555555">+999955555555</a>
         <a href="info@sobaka.ge">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263-<br> 265, Амстердам</p>
@@ -45,7 +45,7 @@
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
             <a class="card-link">
-              <article class="card card_type_film">
+              <article class="card card__background card_type_film">
                 <h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3>
                 <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
                 <div class="overlay"></div>
@@ -54,7 +54,7 @@
           </li>
           <li class="lots__card-list-item">
             <a class="card-link">
-              <article class="card card_type_book">
+              <article class="card__background card card_type_book">
                 <h3 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
                 <p class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
                 <div class="overlay"></div>
@@ -63,7 +63,7 @@
           </li>
           <li class="lots__card-list-item">
             <a class="card-link">
-              <article class="card card_type_picture">
+              <article class="card__background card card_type_picture ">
                 <h3 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
                 <p class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
                 <div class="overlay"></div>
@@ -100,9 +100,35 @@
       </section>
     </main>
     <footer class="footer">
-      <div></div>
-      <div></div>
-      <div></div>
+      <address class="address footer__address">
+        <a href="tel:+999955555555">+999955555555</a>
+        <a href="info@sobaka.ge">info@sobaka.ge</a>
+        <p>наб. Принсенграхт 263-<br> 265, Амстердам</p>
+      </address>
+      <nav class="footer__menu">
+        <ul class="footer__menu-list">
+          <li class="footer__menu-list-item"><a class="footer__menu-link footer__menu-link_active" href="">главная</a></li>
+          <li class="footer__menu-list-item"><a class="footer__menu-link" href="">посмотреть лоты</a></li>
+          <li class="footer__menu-list-item"><a class="footer__menu-link" href="">об аукционе</a></li>
+        </ul>
+      </nav>
+      <ul class="footer__social-list">
+        <li class="footer__social-list-item">
+          <a class="footer__social-link" href="">
+            <img class="footer__social-icon" src="./images/yt.svg" alt="">
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a class="footer__social-link" href="">
+            <img class="footer__social-icon" src="./images/vk.svg" alt="">
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a class="footer__social-link" href="">
+            <img class="footer__social-icon" src="./images/pinterest.svg" alt="">
+          </a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
