@@ -206,3 +206,51 @@ ul {
     font-size: 20px;
     text-decoration: underline;
 }
+
+.about {
+    display: grid;
+    width: 1052px;
+    height: 595px;
+    grid-template-columns: 334px 1fr;
+    margin: 120px 25px 180px;
+}
+
+.about__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.about__logo {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+}
+
+.about__logo-image {
+    display: block;
+    width: 148px;
+}
+
+.about__title {
+    margin-top: 136px;
+    font-size: 40px;
+    text-transform: uppercase;
+    align-self: flex-start;
+    margin-left: 25px;
+    margin-bottom: 100px;
+}
+
+.about__text {
+    margin-left: 25px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+    font-size: 20px;
+}
