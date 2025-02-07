@@ -1,28 +1,15 @@
-body {
-    font-style: normal;
-    font-size: 18px;
-}
-
-ul { 
-    list-style: none;
-    margin: 0; 
-    padding: 0
-}
-
 .header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    padding: 0 50px 0;
+    padding: 92px 50px 92px;
     align-items: center;
-    height: 293px;
 }
 
 .header__menu-list {
     display: flex;
     gap: 31px;
     font-weight: normal;
-    
     list-style: circle;
 }
 
@@ -56,10 +43,7 @@ ul {
 .cover {
     display: flex;
     flex-direction: column;
-    background-image: url(../images/cover.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    background: url(../images/cover.jpg) no-repeat center center / cover;
     position: relative;
     padding: 165px 50px 50px;
 }
@@ -76,25 +60,25 @@ ul {
     font-weight: bold;
     font-size: 100px;
     line-height: 115%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     z-index: 1;
     letter-spacing: 0.3em;
 }
 
 .aligned-text {
     display: block;
-
 }
 
 .aligned-text_center {
     display: block;
-    margin-top: 20px;
-    margin-left: 330.5px;
+    text-align:center;
 }
 
 .aligned-text_right {
     display: block;
-    margin-top: 20px;
-    margin-left: 613px;
+    text-align: end;
 }
 
 .no-letter-spacing {
@@ -121,8 +105,8 @@ ul {
     color: white;
     background-color: transparent;
     text-transform: inherit;
-    width: 256px;
-    height: 51px;
+    min-width: 256px;
+    min-height: 51px;
     border: 1px solid white;
 }
 
@@ -207,7 +191,6 @@ ul {
 .about {
     display: grid;
     width: 1052px;
-    height: 595px;
     grid-template-columns: 334px 1fr;
     margin: 120px 25px 180px;
 }
